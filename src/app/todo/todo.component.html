@@ -1,0 +1,24 @@
+<div class="form-body">
+  <form autocomplete="off">
+    <div>
+      <label>Name: </label>
+      <input type="text" formControlName="name" autocomplete="off" />
+    </div>
+    <div>
+      <label>Description: </label>
+      <input type="text" formControlName="description" autocomplete="off" />
+    </div>
+    <div>
+      <label>City: </label>
+      <input type="text" formControlName="city" autocomplete="off" />
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<p>todo works!</p>
+<div *ngFor="let todo of todos">
+  <div>{{ todo?.id }}</div>
+  <div>{{ todo?.name }}</div>
+  <div>{{ todo?.description }}</div>
+</div>
